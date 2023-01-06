@@ -22,6 +22,7 @@ You can download the POC and its dependency files from [here](https://drive.goog
 * Step #3 : Download and extract the POC folder from above link and install it dependencies.<br>
 
     ```py
+    $ tar -xvf jdk-8u20-linux-x64.tar.gz
     $ pip3 install -r requirements.txt
     $ python3 poc.py --userip localhost --webport 8000 --lport 4545
 
