@@ -4,7 +4,7 @@ Recently there was a new vulnerability in log4j, a java logging library that is 
 
 In this repository we have seen how to exploit log4j vulnerability with a simple vulnerable application
 
-You can download the POC and its dependency file from [here](https://drive.google.com/drive/folders/1gpNdCJnvYI0qjVJMeOFkfd_i3NCujTPT?usp=sharing).
+You can download the POC and its dependency files from [here](https://drive.google.com/drive/folders/1gpNdCJnvYI0qjVJMeOFkfd_i3NCujTPT?usp=sharing).
 
 #### Usage:
 
@@ -27,7 +27,7 @@ You can download the POC and its dependency file from [here](https://drive.googl
 
     [!] CVE: CVE-2021-44228
 
-    [!] Github repo: https://github.com/Hack-with-8k0b/log4j-poc
+    [!] Github repo: https://github.com/Hack-with-8k0b/log4j-App-and-Poc
 
     [+] Exploit java class created success
     [+] Setting up fake LDAP server
